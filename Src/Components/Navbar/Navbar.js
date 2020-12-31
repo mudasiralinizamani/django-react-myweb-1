@@ -74,6 +74,16 @@ function Navbar(props) {
           <li>
             <Link
               className={`${style_css["nav-links"]} ${
+                style_css[props.active_about]
+              }`}
+              to="/about/"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={`${style_css["nav-links"]} ${
                 style_css[props.active_contact]
               }`}
               to="/contact/"
